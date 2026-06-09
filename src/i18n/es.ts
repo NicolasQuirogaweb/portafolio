@@ -4,7 +4,7 @@ export const es: PortfolioData = {
   name: "Nicolas Quiroga",
   headline: "Hola, soy Nicolas",
   role: "Desarrollador Full Stack & Tecnólogo Creativo",
-  bio: "Creo experiencias digitales donde el código se encuentra con el arte. Durante los últimos 4 años he construido productos que viven en la intersección entre el diseño ambicioso y la ingeniería sólida.",
+  bio: "Creo experiencias digitales donde el código se encuentra con el arte. Durante los últimos 4 años he construido productos que viven en la intersección entre el diseño ambicioso y la arquitectura sólida.",
   status: {
     text: "Disponible",
     type: "available",
@@ -56,9 +56,9 @@ export const es: PortfolioData = {
     {
       title: "Riderlab",
       description:
-        "Riderlab es una aplicación web completa para diseñar y gestionar pliegos técnicos de rider utilizados por ingenieros de sonido y equipos de producción en vivo. Combina un lienzo gráfico con KonvaJS y un sistema de panel en árbol estructurado, permitiendo a los usuarios organizar visualmente elementos del escenario (entradas, grupos, mezclas, monitores, puntos de energía) mediante arrastrar y soltar, redimensionar e interacciones de selección múltiple. El editor incluye paneles de herramientas categorizados, edición en línea, alternancia de visibilidad por capas, historial de deshacer/rehacer, operaciones de portapapeles y exportación de alta calidad a PDF con una tabla técnica de rider generada automáticamente — todo construido con React, Next.js y una arquitectura modular basada en hooks.",
+        "Riderlab es una aplicación web completa para diseñar y gestionar riders técnicos utilizados por ingenieros de sonido y equipos de producción en vivo. Combina un lienzo gráfico con KonvaJS y un sistema de panel en árbol estructurado, permitiendo a los usuarios organizar visualmente elementos del escenario (entradas, grupos, mezclas, monitores, puntos de energía) mediante arrastrar y soltar, redimensionar e interacciones de selección múltiple. El editor incluye paneles de herramientas categorizados, edición en línea, alternancia de visibilidad por capas, historial de deshacer/rehacer, operaciones de portapapeles y exportación de alta calidad a PDF con una tabla técnica de rider generada automáticamente — todo construido con React, Next.js y una arquitectura modular basada en hooks.",
       tags: ["Next.js", "TypeScript", "PostgreSQL", "WebSockets"],
-      category: "Full Stack",
+      category: "Frontend",
       image: "/images/portfolio-Riderlab.png",
       github: "https://github.com/alexrivera/pulse",
       live: "https://pulse-demo.vercel.app",
