@@ -75,6 +75,17 @@ export const en: PortfolioData = {
       live: "https://niv0web.vercel.app/",
       featured: false,
     },
+    {
+      title: "Url Shortener API",
+      description:
+        "API for shortening URLs with authentication, token management, and usage statistics. Built with Node.js/Express and MongoDB.",
+      tags: ["TypeScript", "Node.js", "Express", "MongoDB" , "JWT" , "Docker", "AWS" , "Render", "Vercel", "CI/CD", "Error Boundary", "Axios"],
+      category: "Backend",
+      image: "/images/portfolio-url-shortener.png",
+      github: "https://github.com/NicolasQuirogaweb/-url-shortener.git",
+      live: "https://url-shortener-04gp.onrender.com/api/docs",
+      featured: false,
+    },
   ],
   experience: [
     {
@@ -113,6 +124,23 @@ export const en: PortfolioData = {
         "Separation of concerns extracting business logic into custom hooks (useItemEventHandlers, useCanvasSelection, useMultiDrag, etc.) and utility modules (stageNodes, grid) keeping components lean.",
         "Support for detached nodes with drag-to-detach/reattach between stage and floating mode.",
         "Clipboard operations (copy/paste/duplicate) for canvas nodes with keyboard shortcuts.",
+      ],
+    },
+    {
+      company: "Url Shortener API",
+      role: "Backend Engineer",
+      date: "2025 — Present",
+      bullets: [
+        "JWT authentication with access/refresh tokens",
+        "Intelligent URL shortening with custom slugs",
+        "Cached redirects in Redis with sub-100ms responses",
+        "Analytics of clicks with geolocation (country, city, region via ip-api.com)",
+        "Grouping of analytics by day/week/month with date filtering",
+        "Soft delete and expiration of URLs by TTL",
+        "Rate limiting on auth endpoints (Redis + Upstash)",
+        "Login with Google OAuth via passport",
+        "Documentation with Swagger",
+        "Hosted on Render with MongoDB Atlas + Redis (Upstash)",
       ],
     },
   ],
