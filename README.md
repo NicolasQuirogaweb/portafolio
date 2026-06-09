@@ -1,4 +1,4 @@
-# Alex Rivera — Portfolio
+# Nicolás Quiroga — Portfolio
 
 A handcrafted personal portfolio built with Next.js 14+, Tailwind CSS, and Framer Motion. Dark theme, electric accents, brutalist-meets-editorial design.
 
@@ -23,7 +23,7 @@ All content lives in a single file:
 src/data/portfolio.ts
 ```
 
-Edit your **name, role, bio, skills, projects, experience, social links, and nav** there — zero hardcoded strings in components.
+zero hardcoded strings in components.
 
 ### Changing your accent color
 
