@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { usePortfolio } from "@/i18n/provider";
 import type { Project } from "@/i18n/provider";
@@ -10,6 +10,10 @@ export default function Projects() {
   const portfolio = usePortfolio();
   const { projectFilterAll, projectFilterFrontend, projectFilterBackend, projectFilterFullStack } = portfolio.ui;
   const [active, setActive] = useState<string>(projectFilterAll);
+
+  useEffect(() => {
+    setActive(projectFilterAll);
+  }, [projectFilterAll]);
 
   const categories = [projectFilterAll, projectFilterFrontend, projectFilterBackend, projectFilterFullStack];
   const categoryMap: Record<string, "Frontend" | "Backend" | "Full Stack"> = {

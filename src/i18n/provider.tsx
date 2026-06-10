@@ -50,6 +50,7 @@ export interface PortfolioData {
   bio: string;
   status: { text: string; type: string };
   social: { github: string; linkedin: string; email: string };
+  cv: string;
   nav: NavItem[];
   skills: SkillCategory[];
   projects: Project[];
@@ -57,6 +58,7 @@ export interface PortfolioData {
   ui: {
     heroViewWork: string;
     heroContactMe: string;
+    heroDownloadCV: string;
     scrollDown: string;
     aboutTitle: string;
     projectsTitle: string;

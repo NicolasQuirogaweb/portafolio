@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowDown, Code2, Globe, Mail } from "lucide-react";
+import { ArrowDown, Code2, Globe, Mail, Download } from "lucide-react";
 import { usePortfolio } from "@/i18n/provider";
 import Button from "@/components/ui/Button";
 import Typewriter from "@/components/ui/Typewriter";
@@ -67,6 +67,14 @@ export default function Hero() {
         >
           <Button href="#projects">{portfolio.ui.heroViewWork}</Button>
           <Button href="#contact" variant="ghost">{portfolio.ui.heroContactMe}</Button>
+          <a
+            href={portfolio.cv}
+            download
+            className="inline-flex items-center gap-2 rounded-full border border-[rgba(255,255,255,0.15)] px-6 py-3 text-sm font-medium text-[#f0f0f0] transition-all duration-300 hover:border-[#00ff87] hover:text-[#00ff87]"
+          >
+            <Download size={16} />
+            {portfolio.ui.heroDownloadCV}
+          </a>
         </motion.div>
 
         <motion.div

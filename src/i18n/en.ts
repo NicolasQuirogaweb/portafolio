@@ -14,6 +14,7 @@ export const en: PortfolioData = {
     linkedin: "https://www.linkedin.com/in/nquirogawebdev/",
     email: "nquirogawebdev@gmail.com",
   },
+  cv: "/nicolas_quiroga_resume_dev.pdf",
   nav: [
     { label: "Work", href: "#work" },
     { label: "About", href: "#about" },
@@ -147,6 +148,7 @@ export const en: PortfolioData = {
   ui: {
     heroViewWork: "View Work",
     heroContactMe: "Contact Me",
+    heroDownloadCV: "Download CV",
     scrollDown: "Scroll down",
     aboutTitle: "About",
     projectsTitle: "Projects",
