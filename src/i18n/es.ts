@@ -1,8 +1,8 @@
 import type { PortfolioData } from "./provider";
 
 export const es: PortfolioData = {
-  name: "Nicolas Quiroga",
-  headline: "Hola, soy Nicolas",
+  name: "Nicolás Quiroga",
+  headline: "Hola, soy Nicolás",
   role: "Desarrollador Full Stack & Tecnólogo Creativo",
   bio: "Creo experiencias digitales donde el código se encuentra con el arte. Durante los últimos 4 años he construido productos que viven en la intersección entre el diseño ambicioso y la arquitectura sólida.",
   status: {
