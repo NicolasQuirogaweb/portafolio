@@ -18,7 +18,7 @@ export default function Experience() {
           <h2 className="font-display text-4xl font-bold tracking-tight text-[#f0f0f0] sm:text-5xl">
             {portfolio.ui.experienceTitle}
           </h2>
-          <div className="mt-6 h-px w-12 bg-[#00ff87]" />
+          <div className="mt-6 h-px w-12 bg-[#38bdf8]" />
         </motion.div>
 
         <div className="mt-16 space-y-0">
@@ -32,7 +32,7 @@ export default function Experience() {
               className="relative border-l border-[rgba(255,255,255,0.07)] pl-8 pb-12 last:pb-0"
             >
               <div className="absolute left-0 top-0 -translate-x-1/2">
-                <div className="h-3 w-3 rounded-full border-2 border-[#00ff87] bg-[#0a0a0a]" />
+                <div className="h-3 w-3 rounded-full border-2 border-[#38bdf8] bg-[#0a0a0a]" />
               </div>
 
               <div className="flex flex-col gap-1 sm:flex-row sm:items-center sm:justify-between">

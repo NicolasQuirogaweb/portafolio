@@ -46,7 +46,7 @@ export default function Cursor() {
       transition={{ duration: 0.3 }}
     >
       <motion.div
-        className="-translate-x-1/2 -translate-y-1/2 rounded-full bg-[#00ff87]"
+        className="-translate-x-1/2 -translate-y-1/2 rounded-full bg-[#38bdf8]"
         animate={{
           width: isHovering ? 32 : 8,
           height: isHovering ? 32 : 8,

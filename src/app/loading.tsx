@@ -18,7 +18,7 @@ export default function Loading() {
           {[0, 1, 2, 3, 4].map((i) => (
             <motion.div
               key={i}
-              className="h-2 w-2 rounded-full bg-[#00ff87]"
+              className="h-2 w-2 rounded-full bg-[#38bdf8]"
               animate={{
                 y: [0, -8, 0],
                 opacity: [0.3, 1, 0.3],

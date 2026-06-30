@@ -28,7 +28,7 @@ export default function Navbar() {
     >
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
         <a href="#" className="font-display text-xl font-bold tracking-tight text-[#f0f0f0]">
-          {portfolio.name.split(" ")[0]}<span className="text-[#00ff87]">.</span>
+          {portfolio.name.split(" ")[0]}<span className="text-[#38bdf8]">.</span>
         </a>
 
         <div className="flex items-center gap-6">
@@ -47,7 +47,7 @@ export default function Navbar() {
 
           <button
             onClick={toggleLang}
-            className="rounded-full border border-[rgba(255,255,255,0.15)] px-3 py-1 text-xs font-medium uppercase tracking-wider text-[#888888] transition-all hover:border-[#00ff87] hover:text-[#00ff87]"
+            className="rounded-full border border-[rgba(255,255,255,0.15)] px-3 py-1 text-xs font-medium uppercase tracking-wider text-[#888888] transition-all hover:border-[#38bdf8] hover:text-[#38bdf8]"
             aria-label={`Switch to ${lang === "en" ? "Spanish" : "English"}`}
           >
             {lang === "en" ? "ES" : "EN"}

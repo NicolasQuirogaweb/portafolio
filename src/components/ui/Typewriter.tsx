@@ -32,7 +32,7 @@ export default function Typewriter({ text, delay = 30 }: TypewriterProps) {
         <motion.span
           animate={{ opacity: [1, 0] }}
           transition={{ duration: 0.5, repeat: Infinity }}
-          className="ml-0.5 text-[#00ff87]"
+          className="ml-0.5 text-[#38bdf8]"
         >
           _
         </motion.span>

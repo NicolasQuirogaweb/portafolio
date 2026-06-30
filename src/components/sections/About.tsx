@@ -45,12 +45,12 @@ export default function About() {
             <h2 className="font-display text-4xl font-bold tracking-tight text-[#f0f0f0] sm:text-5xl">
               {portfolio.ui.aboutTitle}
             </h2>
-            <div className="mt-6 h-px w-12 bg-[#00ff87]" />
+            <div className="mt-6 h-px w-12 bg-[#38bdf8]" />
             <p className="mt-6 text-lg leading-relaxed text-[#888888]">{portfolio.bio}</p>
             <div className="mt-6 flex items-center gap-2">
               <span className="relative flex h-2.5 w-2.5">
-                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#00ff87] opacity-75" />
-                <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-[#00ff87]" />
+                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#38bdf8] opacity-75" />
+                <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-[#38bdf8]" />
               </span>
               <span className="text-sm text-[#f0f0f0]">{portfolio.status.text}</span>
             </div>
@@ -73,7 +73,7 @@ export default function About() {
                   {group.items.map((skill) => (
                     <span
                       key={skill.name}
-                      className="inline-flex items-center gap-1.5 rounded-full border border-[rgba(255,255,255,0.07)] bg-[#111111] px-3 py-1.5 text-sm text-[#f0f0f0] transition-all duration-300 hover:border-[#00ff87]/30 hover:text-[#00ff87]"
+                      className="inline-flex items-center gap-1.5 rounded-full border border-[rgba(255,255,255,0.07)] bg-[#111111] px-3 py-1.5 text-sm text-[#f0f0f0] transition-all duration-300 hover:border-[#38bdf8]/30 hover:text-[#38bdf8]"
                     >
                       {iconMap[skill.icon]}
                       {skill.name}

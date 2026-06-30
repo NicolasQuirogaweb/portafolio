@@ -46,7 +46,7 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
             href={project.live}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex h-10 w-10 items-center justify-center rounded-full bg-[#00ff87] text-[#0a0a0a] transition-transform hover:scale-110"
+            className="flex h-10 w-10 items-center justify-center rounded-full bg-[#38bdf8] text-[#0a0a0a] transition-transform hover:scale-110"
             aria-label={`${project.title} live demo`}
           >
             <ExternalLink size={18} />
@@ -59,7 +59,7 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
           {project.tags.slice(0, 3).map((tag) => (
             <span
               key={tag}
-              className="rounded-full bg-[#00ff87]/10 px-2 py-0.5 text-[10px] font-medium text-[#00ff87]"
+              className="rounded-full bg-[#38bdf8]/10 px-2 py-0.5 text-[10px] font-medium text-[#38bdf8]"
             >
               {tag}
             </span>

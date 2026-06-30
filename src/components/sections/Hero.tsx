@@ -23,7 +23,7 @@ export default function Hero() {
           className="mb-6"
         >
           <span className="inline-flex items-center gap-2 rounded-full border border-[rgba(255,255,255,0.07)] bg-[#111111] px-4 py-1.5 text-xs text-[#888888]">
-            <span className="h-2 w-2 rounded-full bg-[#00ff87] animate-pulse" />
+            <span className="h-2 w-2 rounded-full bg-[#38bdf8] animate-pulse" />
             {portfolio.status.text}
           </span>
         </motion.div>
@@ -44,7 +44,7 @@ export default function Hero() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.3, delay: 0.8 }}
-            className="text-[#00ff87]"
+            className="text-[#38bdf8]"
           >
             .
           </motion.span>
@@ -70,7 +70,7 @@ export default function Hero() {
           <a
             href={portfolio.cv}
             download
-            className="inline-flex items-center gap-2 rounded-full border border-[rgba(255,255,255,0.15)] px-6 py-3 text-sm font-medium text-[#f0f0f0] transition-all duration-300 hover:border-[#00ff87] hover:text-[#00ff87]"
+            className="inline-flex items-center gap-2 rounded-full border border-[rgba(255,255,255,0.15)] px-6 py-3 text-sm font-medium text-[#f0f0f0] transition-all duration-300 hover:border-[#38bdf8] hover:text-[#38bdf8]"
           >
             <Download size={16} />
             {portfolio.ui.heroDownloadCV}
@@ -94,7 +94,7 @@ export default function Hero() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label={label}
-              className="group relative flex h-10 w-10 items-center justify-center rounded-full border border-[rgba(255,255,255,0.07)] text-[#888888] transition-all duration-300 hover:border-[#00ff87] hover:text-[#00ff87]"
+              className="group relative flex h-10 w-10 items-center justify-center rounded-full border border-[rgba(255,255,255,0.07)] text-[#888888] transition-all duration-300 hover:border-[#38bdf8] hover:text-[#38bdf8]"
             >
               <Icon size={18} />
               <span className="absolute -bottom-8 left-1/2 -translate-x-1/2 text-[10px] uppercase tracking-widest text-[#888888] opacity-0 transition-opacity group-hover:opacity-100">

@@ -63,7 +63,7 @@ export default function FloatingShapes() {
         ctx.save();
         ctx.translate(s.x, s.y);
         ctx.rotate(s.rotation);
-        ctx.strokeStyle = "rgba(0, 255, 135, 0.08)";
+        ctx.strokeStyle = "rgba(56, 189, 248, 0.08)";
         ctx.lineWidth = 1;
 
         if (s.type === "circle") {

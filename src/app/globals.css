@@ -3,8 +3,8 @@
 :root {
   --background: #0a0a0a;
   --surface: #111111;
-  --accent: #00ff87;
-  --accent-dim: rgba(0, 255, 135, 0.15);
+  --accent: #38bdf8;
+  --accent-dim: rgba(56, 189, 248, 0.15);
   --text-primary: #f0f0f0;
   --text-secondary: #888888;
   --border: rgba(255, 255, 255, 0.07);

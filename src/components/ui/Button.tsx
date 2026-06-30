@@ -13,8 +13,8 @@ interface ButtonProps {
 export default function Button({ children, variant = "primary", href, onClick, className = "" }: ButtonProps) {
   const base = "inline-flex items-center gap-2 rounded-full px-6 py-3 text-sm font-medium transition-all duration-300";
   const styles = {
-    primary: "bg-[#00ff87] text-[#0a0a0a] hover:bg-[#00ff87]/90 hover:shadow-[0_0_30px_rgba(0,255,135,0.3)]",
-    ghost: "border border-[rgba(255,255,255,0.15)] text-[#f0f0f0] hover:border-[#00ff87] hover:text-[#00ff87]",
+    primary: "bg-[#38bdf8] text-[#0a0a0a] hover:bg-[#38bdf8]/90 hover:shadow-[0_0_30px_rgba(56,189,248,0.3)]",
+    ghost: "border border-[rgba(255,255,255,0.15)] text-[#f0f0f0] hover:border-[#38bdf8] hover:text-[#38bdf8]",
   };
 
   const Component = motion.create(href ? "a" : "button");

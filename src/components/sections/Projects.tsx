@@ -41,7 +41,7 @@ export default function Projects() {
           <h2 className="font-display text-4xl font-bold tracking-tight text-[#f0f0f0] sm:text-5xl">
             {portfolio.ui.projectsTitle}
           </h2>
-          <div className="mt-6 h-px w-12 bg-[#00ff87]" />
+          <div className="mt-6 h-px w-12 bg-[#38bdf8]" />
         </motion.div>
 
         <div className="mt-10 flex flex-wrap gap-2">
@@ -51,7 +51,7 @@ export default function Projects() {
               onClick={() => setActive(cat)}
               className={`rounded-full px-4 py-1.5 text-sm font-medium transition-all duration-300 ${
                 active === cat
-                  ? "bg-[#00ff87] text-[#0a0a0a]"
+                  ? "bg-[#38bdf8] text-[#0a0a0a]"
                   : "border border-[rgba(255,255,255,0.07)] text-[#888888] hover:text-[#f0f0f0]"
               }`}
             >
