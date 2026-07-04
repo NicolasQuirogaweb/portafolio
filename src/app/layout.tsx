@@ -21,6 +21,7 @@ const dmSans = DM_Sans({
 export const metadata: Metadata = {
   title: `${en.name} — ${en.role}`,
   description: en.bio,
+  icons: { icon: "/icon.svg" },
   openGraph: {
     title: `${en.name} — ${en.role}`,
     description: en.bio,
