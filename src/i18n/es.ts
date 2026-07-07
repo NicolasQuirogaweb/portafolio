@@ -177,7 +177,6 @@ export const es: PortfolioData = {
     contactSend: "Enviar Mensaje",
     contactCopied: "Copiado",
     contactCopyEmailAria: "Copiar dirección de email",
-    footerTagline: "Diseñado y construido con precisión.",
     navLabelClose: "Cerrar menú",
     navLabelOpen: "Abrir menú",
     notFoundTitle: "404",

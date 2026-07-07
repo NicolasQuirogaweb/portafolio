@@ -164,7 +164,6 @@ export const en: PortfolioData = {
     contactSend: "Send Message",
     contactCopied: "Copied",
     contactCopyEmailAria: "Copy email address",
-    footerTagline: "Designed & built with precision.",
     navLabelClose: "Close menu",
     navLabelOpen: "Open menu",
     notFoundTitle: "404",

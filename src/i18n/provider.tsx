@@ -74,7 +74,6 @@ export interface PortfolioData {
     contactSend: string;
     contactCopied: string;
     contactCopyEmailAria: string;
-    footerTagline: string;
     navLabelClose: string;
     navLabelOpen: string;
     notFoundTitle: string;
