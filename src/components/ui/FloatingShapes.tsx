@@ -2,6 +2,12 @@
 
 import { useEffect, useRef } from "react";
 
+const symbols = [
+  "{ }", "[ ]", "( )", "</>", "=>", "//",
+  "&&", "||", "!==", "===", "->", "=>",
+  "fn", "let", "if", "for", "try", "new",
+];
+
 export default function FloatingShapes() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
@@ -22,65 +28,51 @@ export default function FloatingShapes() {
     resize();
     window.addEventListener("resize", resize);
 
-    const shapes: {
+    const particles: {
       x: number;
       y: number;
-      size: number;
       speedX: number;
       speedY: number;
       rotation: number;
       rotSpeed: number;
-      type: "circle" | "square" | "triangle";
+      symbol: string;
+      size: number;
     }[] = [];
 
     for (let i = 0; i < 12; i++) {
-      const types = ["circle", "square", "triangle"] as const;
-      shapes.push({
+      particles.push({
         x: Math.random() * canvas.width,
         y: Math.random() * canvas.height,
-        size: 20 + Math.random() * 40,
-        speedX: (Math.random() - 0.5) * 0.3,
-        speedY: (Math.random() - 0.5) * 0.3,
+        size: 14 + Math.random() * 18,
+        speedX: (Math.random() - 0.5) * 0.25,
+        speedY: (Math.random() - 0.5) * 0.25,
         rotation: Math.random() * Math.PI * 2,
-        rotSpeed: (Math.random() - 0.5) * 0.01,
-        type: types[Math.floor(Math.random() * types.length)],
+        rotSpeed: (Math.random() - 0.5) * 0.008,
+        symbol: symbols[Math.floor(Math.random() * symbols.length)],
       });
     }
 
     const animate = () => {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-      shapes.forEach((s) => {
-        s.x += s.speedX;
-        s.y += s.speedY;
-        s.rotation += s.rotSpeed;
+      particles.forEach((p) => {
+        p.x += p.speedX;
+        p.y += p.speedY;
+        p.rotation += p.rotSpeed;
 
-        if (s.x < -50) s.x = canvas.width + 50;
-        if (s.x > canvas.width + 50) s.x = -50;
-        if (s.y < -50) s.y = canvas.height + 50;
-        if (s.y > canvas.height + 50) s.y = -50;
+        if (p.x < -80) p.x = canvas.width + 80;
+        if (p.x > canvas.width + 80) p.x = -80;
+        if (p.y < -40) p.y = canvas.height + 40;
+        if (p.y > canvas.height + 40) p.y = -40;
 
         ctx.save();
-        ctx.translate(s.x, s.y);
-        ctx.rotate(s.rotation);
-        ctx.strokeStyle = "rgba(56, 189, 248, 0.08)";
-        ctx.lineWidth = 1;
-
-        if (s.type === "circle") {
-          ctx.beginPath();
-          ctx.arc(0, 0, s.size / 2, 0, Math.PI * 2);
-          ctx.stroke();
-        } else if (s.type === "square") {
-          ctx.strokeRect(-s.size / 2, -s.size / 2, s.size, s.size);
-        } else {
-          ctx.beginPath();
-          ctx.moveTo(0, -s.size / 2);
-          ctx.lineTo(-s.size / 2, s.size / 2);
-          ctx.lineTo(s.size / 2, s.size / 2);
-          ctx.closePath();
-          ctx.stroke();
-        }
-
+        ctx.translate(p.x, p.y);
+        ctx.rotate(p.rotation);
+        ctx.font = `${p.size}px "DM Sans", "JetBrains Mono", monospace`;
+        ctx.fillStyle = "rgba(56, 189, 248, 0.06)";
+        ctx.textAlign = "center";
+        ctx.textBaseline = "middle";
+        ctx.fillText(p.symbol, 0, 0);
         ctx.restore();
       });
 
