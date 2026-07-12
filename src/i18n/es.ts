@@ -3,8 +3,8 @@ import type { PortfolioData } from "./provider";
 export const es: PortfolioData = {
   name: "Nicolás Quiroga",
   headline: "Hola, soy Nicolás",
-  role: "Desarrollador Frontend & Tecnólogo Creativo",
-  bio: "Creo experiencias digitales donde el código se encuentra con el arte. Durante los últimos 4 años he construido productos que viven en la intersección entre el diseño ambicioso y la arquitectura sólida.",
+  role: "Software Engineer",
+  bio: "En 2026, con las herramientas que existen, escribir código es lo fácil. Elegir la arquitectura correcta, saber cuándo usar cada herramienta y asegurarte de que todo no se desarme a escala — ahí es donde paso más tiempo.",
   status: {
     text: "Disponible",
     type: "available",

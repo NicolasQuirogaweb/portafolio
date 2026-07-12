@@ -3,8 +3,8 @@ import type { PortfolioData } from "./provider";
 export const en: PortfolioData = {
   name: "Nicolas Quiroga",
   headline: "Hi, I'm Nicolas",
-  role: "Frontend Engineer & Creative Technologist",
-  bio: "I craft digital experiences where code meets craft. For the past 4 years, I've been building products that live at the intersection of ambitious design and rock-solid engineering.",
+  role: "Software Engineer",
+  bio: "In 2026, with the tools that exist, writing code is the easy part. Picking the right architecture, knowing when to reach for which tool, making sure the whole thing doesn't fall apart at scale — that's where I spend most of my time.",
   status: {
     text: "Open to work",
     type: "available",
