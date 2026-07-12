@@ -20,6 +20,7 @@ export const en: PortfolioData = {
     { label: "About", href: "#about" },
     { label: "Projects", href: "#projects" },
     { label: "Experience", href: "#experience" },
+    { label: "Education", href: "#education" },
     { label: "Contact", href: "#contact" },
   ],
   skills: [
@@ -145,6 +146,15 @@ export const en: PortfolioData = {
       ],
     },
   ],
+  education: [
+    {
+      institution: "UTN eLearning",
+      degree: "Diplomatura en Programación Web Fullstack — IA Assisted",
+      date: "2024",
+      description:
+        "Formación integral en desarrollo frontend y backend con incorporación de herramientas de Inteligencia Artificial para optimizar el proceso de creación de aplicaciones web. Tecnologías: HTML5, CSS3, JavaScript, PHP, MySQL, consumo de APIs, programación orientada a objetos y automatización asistida por IA.",
+    },
+  ],
   ui: {
     heroViewWork: "View Work",
     heroContactMe: "Contact Me",
@@ -157,6 +167,7 @@ export const en: PortfolioData = {
     projectFilterBackend: "Backend",
     projectFilterFullStack: "Full Stack",
     experienceTitle: "Experience",
+    educationTitle: "Education",
     contactHeading: "Let's build\nsomething.",
     contactNamePlaceholder: "Name",
     contactEmailPlaceholder: "Email",

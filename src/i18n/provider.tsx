@@ -38,6 +38,13 @@ export interface Experience {
   bullets: string[];
 }
 
+export interface Education {
+  institution: string;
+  degree: string;
+  date: string;
+  description: string;
+}
+
 export interface NavItem {
   label: string;
   href: string;
@@ -55,6 +62,7 @@ export interface PortfolioData {
   skills: SkillCategory[];
   projects: Project[];
   experience: Experience[];
+  education: Education[];
   ui: {
     heroViewWork: string;
     heroContactMe: string;
@@ -67,6 +75,7 @@ export interface PortfolioData {
     projectFilterBackend: string;
     projectFilterFullStack: string;
     experienceTitle: string;
+    educationTitle: string;
     contactHeading: string;
     contactNamePlaceholder: string;
     contactEmailPlaceholder: string;
