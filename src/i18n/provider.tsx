@@ -77,10 +77,6 @@ export interface PortfolioData {
     experienceTitle: string;
     educationTitle: string;
     contactHeading: string;
-    contactNamePlaceholder: string;
-    contactEmailPlaceholder: string;
-    contactMessagePlaceholder: string;
-    contactSend: string;
     contactCopied: string;
     contactCopyEmailAria: string;
     navLabelClose: string;

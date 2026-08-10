@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Send, Check, Code2, Globe, Mail } from "lucide-react";
+import { Check, Code2, Globe, Mail } from "lucide-react";
 import { usePortfolio } from "@/i18n/provider";
 
 export default function Contact() {
@@ -38,60 +38,30 @@ export default function Contact() {
           </div>
         </motion.div>
 
-        <div className="mt-16 mx-auto max-w-xl">
-          <motion.form
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-50px" }}
-            transition={{ duration: 0.5, delay: 0.1 }}
-            onSubmit={(e) => e.preventDefault()}
-            className="space-y-5"
-          >
-            <div>
-              <label htmlFor="name" className="sr-only">{portfolio.ui.contactNamePlaceholder}</label>
-              <input
-                id="name"
-                type="text"
-                placeholder={portfolio.ui.contactNamePlaceholder}
-                className="w-full rounded-xl border border-[rgba(255,255,255,0.07)] bg-[#111111] px-5 py-3.5 text-sm text-[#f0f0f0] placeholder-[#888888] outline-none transition-colors focus:border-[#38bdf8]"
-              />
-            </div>
-            <div>
-              <label htmlFor="email" className="sr-only">{portfolio.ui.contactEmailPlaceholder}</label>
-              <input
-                id="email"
-                type="email"
-                placeholder={portfolio.ui.contactEmailPlaceholder}
-                className="w-full rounded-xl border border-[rgba(255,255,255,0.07)] bg-[#111111] px-5 py-3.5 text-sm text-[#f0f0f0] placeholder-[#888888] outline-none transition-colors focus:border-[#38bdf8]"
-              />
-            </div>
-            <div>
-              <label htmlFor="message" className="sr-only">{portfolio.ui.contactMessagePlaceholder}</label>
-              <textarea
-                id="message"
-                rows={4}
-                placeholder={portfolio.ui.contactMessagePlaceholder}
-                className="w-full resize-none rounded-xl border border-[rgba(255,255,255,0.07)] bg-[#111111] px-5 py-3.5 text-sm text-[#f0f0f0] placeholder-[#888888] outline-none transition-colors focus:border-[#38bdf8]"
-              />
-            </div>
-            <motion.button
-              type="submit"
-              whileHover={{ scale: 1.02 }}
-              whileTap={{ scale: 0.98 }}
-              className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-[#38bdf8] px-6 py-3.5 text-sm font-medium text-[#0a0a0a] transition-all duration-300 hover:shadow-[0_0_30px_rgba(56,189,248,0.3)]"
-            >
-              <Send size={16} />
-              {portfolio.ui.contactSend}
-            </motion.button>
-          </motion.form>
-
+        <div className="mx-auto mt-16 max-w-xl">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-50px" }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-            className="mt-12 flex flex-col items-center gap-6"
+            transition={{ duration: 0.5, delay: 0.1 }}
+            className="flex flex-col items-center gap-6"
           >
+            <button
+              onClick={copyEmail}
+              className="group inline-flex items-center gap-2 rounded-full border border-[rgba(255,255,255,0.12)] px-8 py-4 text-base text-[#f0f0f0] transition-all duration-300 hover:border-[#38bdf8] hover:shadow-[0_0_30px_rgba(56,189,248,0.15)]"
+              aria-label={portfolio.ui.contactCopyEmailAria}
+            >
+              <Mail size={18} className="text-[#38bdf8]" />
+              {portfolio.social.email}
+              <motion.span
+                animate={copied ? { opacity: 1, x: 0 } : { opacity: 0, x: -4 }}
+                className="flex items-center gap-1 text-[#38bdf8]"
+              >
+                <Check size={16} />
+                {portfolio.ui.contactCopied}
+              </motion.span>
+            </button>
+
             <div className="flex items-center gap-4">
               {[
                 { icon: Code2, href: portfolio.social.github, label: portfolio.ui.socialGithub },
@@ -109,22 +79,6 @@ export default function Contact() {
                 </a>
               ))}
             </div>
-
-            <button
-              onClick={copyEmail}
-              className="group flex items-center gap-2 text-sm text-[#888888] transition-colors hover:text-[#38bdf8]"
-              aria-label={portfolio.ui.contactCopyEmailAria}
-            >
-              <Mail size={14} />
-              {portfolio.social.email}
-              <motion.span
-                animate={copied ? { opacity: 1, x: 0 } : { opacity: 0, x: -4 }}
-                className="flex items-center gap-1 text-[#38bdf8]"
-              >
-                <Check size={14} />
-                {portfolio.ui.contactCopied}
-              </motion.span>
-            </button>
           </motion.div>
         </div>
       </div>
