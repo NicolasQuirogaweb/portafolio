@@ -150,11 +150,11 @@ export const en: PortfolioData = {
   ],
   education: [
     {
-      institution: "UTN eLearning",
-      degree: "Diplomatura en Programación Web Fullstack — IA Assisted",
-      date: "2024",
+      institution: "Universidad Tecnológica Nacional (UTN)",
+      degree: "Full Stack Web Development Diploma",
+      date: "2023",
       description:
-        "Formación integral en desarrollo frontend y backend con incorporación de herramientas de Inteligencia Artificial para optimizar el proceso de creación de aplicaciones web. Tecnologías: HTML5, CSS3, JavaScript, PHP, MySQL, consumo de APIs, programación orientada a objetos y automatización asistida por IA.",
+        "Comprehensive frontend and backend training: HTML5, CSS3, JavaScript, PHP, MySQL, API consumption and object-oriented programming.",
     },
   ],
   ui: {
