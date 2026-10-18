@@ -15,8 +15,8 @@ export interface Project {
   description: string;
   tags: string[];
   category: "Frontend" | "Backend" | "Full Stack";
-  /** null shows a placeholder until a screenshot is available */
-  image: string | null;
+  /** screenshots shown as a carousel; an empty list shows a title placeholder */
+  images: string[];
   github: string | null;
   live: string | null;
   /** code exists but the repository is private (shown as a note instead of a link) */
@@ -80,6 +80,10 @@ export interface PortfolioData {
     projectFilterBackend: string;
     projectFilterFullStack: string;
     projectPrivateRepo: string;
+    projectViewCode: string;
+    projectViewLive: string;
+    carouselPrev: string;
+    carouselNext: string;
     experienceTitle: string;
     educationTitle: string;
     contactHeading: string;
