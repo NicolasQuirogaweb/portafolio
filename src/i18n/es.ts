@@ -69,18 +69,6 @@ export const es: PortfolioData = {
       featured: true,
     },
     {
-      title: "Sicilia",
-      description:
-        "Tienda de beats y sitio profesional para Sicilia, productor musical (proyecto pago): producciones con Spotify, catálogo de beats con licencias y compra con Mercado Pago, reproductor de audio global y panel de administración con Payload CMS. Arquitectura definida en 7 fases y setup completo con CI.",
-      tags: ["Next.js", "Payload CMS", "PostgreSQL", "Cloudflare R2", "Mercado Pago"],
-      category: "Full Stack",
-      images: [],
-      github: "https://github.com/NicolasQuirogaweb/prod-sicilia",
-      live: null,
-      status: "En desarrollo",
-      featured: false,
-    },
-    {
       title: "Las Chinas VM",
       description:
         "Sitio portfolio para Las Chinas VM, emprendimiento de ambientación de eventos en Villa Mercedes (proyecto pago). Galería filtrable por categoría con lightbox accesible, contacto directo por WhatsApp e Instagram, animaciones al hacer scroll e imágenes optimizadas a WebP con un script propio en sharp.",
