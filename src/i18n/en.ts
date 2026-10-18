@@ -94,14 +94,14 @@ export const en: PortfolioData = {
     {
       title: "Riderlab",
       description:
-        "Riderlab is a web app that makes technical riders and stage plots fast and simple to build, without the clutter and ads of existing tools, for sound engineers and live production teams. I co-founded it and lead the frontend. It combines a KonvaJS graphic canvas with a tree panel to arrange stage elements (inputs, groups, mixes, monitors, power points) through drag-and-drop, resize and multi-select, plus undo/redo history, clipboard operations and PDF export with an automatically generated technical rider table. Launch planned between November 2026 and January 2027.",
+        "Riderlab is a web app that makes technical riders and stage plots fast and simple to build, without the clutter and ads of existing tools, for sound engineers and live production teams. I co-founded it and lead the frontend. It combines a KonvaJS graphic canvas with a tree panel to arrange stage elements (inputs, groups, mixes, monitors, power points) through drag-and-drop, resize and multi-select, plus undo/redo history, clipboard operations and PDF export with an automatically generated technical rider table. The MVP goes to production between November 2026 and January 2027, while the final UI is being designed with graphic artists.",
       tags: ["React", "Next.js", "TypeScript", "KonvaJS"],
       category: "Frontend",
       images: ["/images/projects/riderlab-1.webp", "/images/projects/riderlab-2.webp", "/images/projects/riderlab-3.webp"],
       github: null,
       live: null,
       privateRepo: true,
-      status: "In development",
+      status: "MVP in development",
       featured: true,
     },
     {
@@ -169,7 +169,7 @@ export const en: PortfolioData = {
       role: "Co-founder · Frontend Lead",
       date: "2025 — Present",
       bullets: [
-        "Web app that makes stage plots and technical riders fast to build, without the clutter and ads of existing tools; launch planned between November 2026 and January 2027",
+        "Web app that makes stage plots and technical riders fast to build, without the clutter and ads of existing tools; MVP launch planned between November 2026 and January 2027, with the final UI being designed alongside graphic artists",
         "Real-time graphic editor on KonvaJS to render and manipulate stage, group, channel and monitor nodes on an interactive canvas",
         "Global selection system with multi-select (Shift+click), synchronized across canvas and tree panel via React Context as single source of truth",
         "Drag, resize and grid-snapping tools for all node types, with responsive scaling for mobile, tablet and desktop",

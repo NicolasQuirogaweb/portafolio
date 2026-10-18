@@ -94,14 +94,14 @@ export const es: PortfolioData = {
     {
       title: "Riderlab",
       description:
-        "Riderlab es una aplicación web para diseñar riders técnicos y stage plots de forma rápida y simple, sin la confusión ni la publicidad de las herramientas actuales, pensada para ingenieros de sonido y equipos de producción en vivo. Proyecto cofundado, donde soy responsable del frontend. Combina un lienzo gráfico con KonvaJS y un panel en árbol para organizar elementos del escenario (entradas, grupos, mezclas, monitores, puntos de energía) con arrastrar y soltar, redimensionado y selección múltiple, más historial de deshacer/rehacer, portapapeles y exportación a PDF con tabla técnica de rider generada automáticamente. Lanzamiento previsto entre noviembre de 2026 y enero de 2027.",
+        "Riderlab es una aplicación web para diseñar riders técnicos y stage plots de forma rápida y simple, sin la confusión ni la publicidad de las herramientas actuales, pensada para ingenieros de sonido y equipos de producción en vivo. Proyecto cofundado, donde soy responsable del frontend. Combina un lienzo gráfico con KonvaJS y un panel en árbol para organizar elementos del escenario (entradas, grupos, mezclas, monitores, puntos de energía) con arrastrar y soltar, redimensionado y selección múltiple, más historial de deshacer/rehacer, portapapeles y exportación a PDF con tabla técnica de rider generada automáticamente. El MVP sale a producción entre noviembre de 2026 y enero de 2027, mientras la interfaz final se diseña junto a artistas gráficos.",
       tags: ["React", "Next.js", "TypeScript", "KonvaJS"],
       category: "Frontend",
       images: ["/images/projects/riderlab-1.webp", "/images/projects/riderlab-2.webp", "/images/projects/riderlab-3.webp"],
       github: null,
       live: null,
       privateRepo: true,
-      status: "En desarrollo",
+      status: "MVP en desarrollo",
       featured: true,
     },
     {
@@ -181,7 +181,7 @@ export const es: PortfolioData = {
       role: "Cofundador · Responsable de Frontend",
       date: "2025 — Presente",
       bullets: [
-        "App web para armar stage plots y riders técnicos rápido, sin la confusión ni la publicidad de las herramientas actuales; lanzamiento previsto entre noviembre de 2026 y enero de 2027",
+        "App web para armar stage plots y riders técnicos rápido, sin la confusión ni la publicidad de las herramientas actuales; el MVP sale a producción entre noviembre de 2026 y enero de 2027 y la interfaz final se diseña junto a artistas gráficos",
         "Editor gráfico en tiempo real con KonvaJS para renderizar y manipular nodos de escenario, grupos, canales y monitores en un lienzo interactivo",
         "Sistema de selección global con multi-selección (Shift+click), sincronizado entre el lienzo y el panel de árbol mediante React Context como fuente única de verdad",
         "Herramientas de arrastrar, redimensionar y snap a grilla para todos los tipos de nodo, con escalado responsivo para mobile, tablet y desktop",
