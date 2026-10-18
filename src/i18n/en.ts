@@ -166,6 +166,7 @@ export const en: PortfolioData = {
     projectFilterFrontend: "Frontend",
     projectFilterBackend: "Backend",
     projectFilterFullStack: "Full Stack",
+    projectPrivateRepo: "Private repository · code walkthrough on request",
     experienceTitle: "Experience",
     educationTitle: "Education",
     contactHeading: "Let's build\nsomething.",

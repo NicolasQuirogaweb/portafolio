@@ -179,6 +179,7 @@ export const es: PortfolioData = {
     projectFilterFrontend: "Frontend",
     projectFilterBackend: "Backend",
     projectFilterFullStack: "Full Stack",
+    projectPrivateRepo: "Repositorio privado · código a pedido",
     experienceTitle: "Experiencia",
     educationTitle: "Formación",
     contactHeading: "Construyamos\nalgo.",

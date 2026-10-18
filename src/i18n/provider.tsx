@@ -15,9 +15,14 @@ export interface Project {
   description: string;
   tags: string[];
   category: "Frontend" | "Backend" | "Full Stack";
-  image: string;
-  github: string;
+  /** null shows a placeholder until a screenshot is available */
+  image: string | null;
+  github: string | null;
   live: string | null;
+  /** code exists but the repository is private (shown as a note instead of a link) */
+  privateRepo?: boolean;
+  /** short badge such as "In development" */
+  status?: string;
   featured: boolean;
 }
 
@@ -74,6 +79,7 @@ export interface PortfolioData {
     projectFilterFrontend: string;
     projectFilterBackend: string;
     projectFilterFullStack: string;
+    projectPrivateRepo: string;
     experienceTitle: string;
     educationTitle: string;
     contactHeading: string;

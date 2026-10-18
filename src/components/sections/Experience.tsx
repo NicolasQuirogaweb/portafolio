@@ -24,7 +24,7 @@ export default function Experience() {
         <div className="mt-16 space-y-0">
           {portfolio.experience.map((exp, i) => (
             <motion.div
-              key={exp.company}
+              key={`${exp.company}-${exp.role}`}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
