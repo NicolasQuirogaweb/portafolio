@@ -3,7 +3,7 @@ import type { PortfolioData } from "./provider";
 export const es: PortfolioData = {
   name: "Nicolás Quiroga",
   headline: "Hola, soy Nicolás",
-  role: "Software Engineer",
+  role: "Full Stack Developer",
   bio: "En 2026, con las herramientas que existen, escribir código es lo fácil. Elegir la arquitectura correcta, saber cuándo usar cada herramienta y asegurarte de que todo no se desarme a escala — ahí es donde paso más tiempo.",
   status: {
     text: "Disponible",
