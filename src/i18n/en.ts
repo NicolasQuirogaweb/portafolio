@@ -58,12 +58,14 @@ export const en: PortfolioData = {
     {
       title: "Riderlab",
       description:
-        "Riderlab is a full-featured web application for designing and managing technical rider sheets used by sound engineers and live production teams. It combines a KonvaJS-powered graphic canvas with a structured tree panel system, enabling users to visually arrange stage elements (inputs, groups, mixes, monitors, power points) through drag-and-drop, resize, and multi-select interactions. The editor features categorized tool panels, inline editing, layer visibility toggles, undo/redo history, clipboard operations, and high-quality export to PDF with an automatically generated technical rider table — all built with React, Next.js, and a modular hook-driven architecture.",
-      tags: ["Next.js", "TypeScript", "PostgreSQL", "WebSockets"],
+        "Riderlab is a web app that makes technical riders and stage plots fast and simple to build, without the clutter and ads of existing tools, for sound engineers and live production teams. I co-founded it and lead the frontend. It combines a KonvaJS graphic canvas with a tree panel to arrange stage elements (inputs, groups, mixes, monitors, power points) through drag-and-drop, resize and multi-select, plus undo/redo history, clipboard operations and PDF export with an automatically generated technical rider table. Launch planned between November 2026 and January 2027.",
+      tags: ["React", "Next.js", "TypeScript", "KonvaJS"],
       category: "Frontend",
       image: "/images/portfolio-Riderlab.png",
-      github: "https://github.com/alexrivera/pulse",
-      live: "https://pulse-demo.vercel.app",
+      github: null,
+      live: null,
+      privateRepo: true,
+      status: "In development",
       featured: true,
     },
     {
@@ -80,8 +82,8 @@ export const en: PortfolioData = {
     {
       title: "Url Shortener API",
       description:
-        "API for shortening URLs with authentication, token management, and usage statistics. Built with Node.js/Express and MongoDB.",
-      tags: ["TypeScript", "Node.js", "Express", "MongoDB" , "JWT" , "Docker", "AWS" , "Render", "Vercel", "CI/CD", "Error Boundary", "Axios"],
+        "URL shortening API with JWT authentication (access/refresh tokens), Redis-cached redirects under 100 ms, click analytics with geolocation, rate limiting and Swagger docs. Built with TypeScript, Express and MongoDB.",
+      tags: ["TypeScript", "Express", "Redis", "MongoDB", "Node.js", "JWT", "Swagger", "Docker", "AWS", "Render", "CI/CD"],
       category: "Backend",
       image: "/images/portfolio-url-shortener.png",
       github: "https://github.com/NicolasQuirogaweb/-url-shortener.git",

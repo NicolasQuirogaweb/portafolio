@@ -58,12 +58,14 @@ export const es: PortfolioData = {
     {
       title: "Riderlab",
       description:
-        "Riderlab es una aplicación web completa para diseñar y gestionar riders técnicos utilizados por ingenieros de sonido y equipos de producción en vivo. Combina un lienzo gráfico con KonvaJS y un sistema de panel en árbol estructurado, permitiendo a los usuarios organizar visualmente elementos del escenario (entradas, grupos, mezclas, monitores, puntos de energía) mediante arrastrar y soltar, redimensionar e interacciones de selección múltiple. El editor incluye paneles de herramientas categorizados, edición en línea, alternancia de visibilidad por capas, historial de deshacer/rehacer, operaciones de portapapeles y exportación de alta calidad a PDF con una tabla técnica de rider generada automáticamente — todo construido con React, Next.js y una arquitectura modular basada en hooks.",
-      tags: ["Next.js", "TypeScript", "PostgreSQL", "WebSockets"],
+        "Riderlab es una aplicación web para diseñar riders técnicos y stage plots de forma rápida y simple, sin la confusión ni la publicidad de las herramientas actuales, pensada para ingenieros de sonido y equipos de producción en vivo. Proyecto cofundado, donde soy responsable del frontend. Combina un lienzo gráfico con KonvaJS y un panel en árbol para organizar elementos del escenario (entradas, grupos, mezclas, monitores, puntos de energía) con arrastrar y soltar, redimensionado y selección múltiple, más historial de deshacer/rehacer, portapapeles y exportación a PDF con tabla técnica de rider generada automáticamente. Lanzamiento previsto entre noviembre de 2026 y enero de 2027.",
+      tags: ["React", "Next.js", "TypeScript", "KonvaJS"],
       category: "Frontend",
       image: "/images/portfolio-Riderlab.png",
-      github: "https://github.com/alexrivera/pulse",
-      live: "https://pulse-demo.vercel.app",
+      github: null,
+      live: null,
+      privateRepo: true,
+      status: "En desarrollo",
       featured: true,
     },
     {
@@ -80,20 +82,19 @@ export const es: PortfolioData = {
     {
       title: "Url Shortener API",
       description:
-        "API para acortar URLs con funcionalidades de autenticación, gestión de tokens y estadísticas de uso. Construida con Node.js/Express y MongoDB.",
+        "API para acortar URLs con autenticación JWT (access/refresh), redirecciones cacheadas en Redis con respuestas de menos de 100 ms, analíticas de clics con geolocalización, rate limiting y documentación Swagger. Construida con TypeScript, Express y MongoDB.",
       tags: [
         "TypeScript",
-        "Node.js",
         "Express",
+        "Redis",
         "MongoDB",
+        "Node.js",
         "JWT",
+        "Swagger",
         "Docker",
         "AWS",
         "Render",
-        "Vercel",
         "CI/CD",
-        "Error Boundary",
-        "Axios",
       ],
       category: "Backend",
       image: "/images/portfolio-url-shortener.png",
