@@ -49,7 +49,6 @@ export const en: PortfolioData = {
         { name: "Figma", icon: "figma" },
         { name: "Docker", icon: "docker" },
         { name: "Git", icon: "git" },
-        { name: "AWS", icon: "aws" },
         { name: "Bitbucket", icon: "bitbucket" },
       ],
     },
@@ -107,7 +106,7 @@ export const en: PortfolioData = {
       title: "Url Shortener API",
       description:
         "URL shortening API with JWT authentication (access/refresh tokens), Redis-cached redirects under 100 ms, click analytics with geolocation, rate limiting and Swagger docs. Built with TypeScript, Express and MongoDB.",
-      tags: ["TypeScript", "Express", "Redis", "MongoDB", "Node.js", "JWT", "Swagger", "Docker", "AWS", "Render", "CI/CD"],
+      tags: ["TypeScript", "Express", "Redis", "MongoDB", "Node.js", "JWT", "Swagger", "Docker", "Render", "CI/CD"],
       category: "Backend",
       images: ["/images/portfolio-url-shortener.png"],
       github: "https://github.com/NicolasQuirogaweb/url-shortener-api",
