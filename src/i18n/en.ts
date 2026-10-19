@@ -110,7 +110,7 @@ export const en: PortfolioData = {
       tags: ["TypeScript", "Express", "Redis", "MongoDB", "Node.js", "JWT", "Swagger", "Docker", "AWS", "Render", "CI/CD"],
       category: "Backend",
       images: ["/images/portfolio-url-shortener.png"],
-      github: "https://github.com/NicolasQuirogaweb/-url-shortener.git",
+      github: "https://github.com/NicolasQuirogaweb/url-shortener-api",
       live: "https://url-shortener-04gp.onrender.com/api/docs",
       featured: false,
     },
