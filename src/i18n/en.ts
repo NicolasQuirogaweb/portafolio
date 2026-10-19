@@ -81,8 +81,8 @@ export const en: PortfolioData = {
     {
       title: "Riderlab",
       description:
-        "Riderlab is a web app that makes technical riders and stage plots fast and simple to build, without the clutter and ads of existing tools, for sound engineers and live production teams. I co-founded it and lead the frontend. It combines a KonvaJS graphic canvas with a tree panel to arrange stage elements (inputs, groups, mixes, monitors, power points) through drag-and-drop, resize and multi-select, plus undo/redo history, clipboard operations and PDF export with an automatically generated technical rider table. The MVP goes to production between November 2026 and January 2027, while the final UI is being designed with graphic artists.",
-      tags: ["React", "Next.js", "TypeScript", "KonvaJS"],
+        "Riderlab is a web app that makes technical riders and stage plots fast and simple to build, without the clutter and ads of existing tools, for sound engineers and live production teams. I co-founded it and work on the frontend in a two-person team. It is a 2D editor with inputs, outputs, power and structure layers, automatic channel numbering, presets and an input/output table. I wrote the canvas engine of the first version (selection, multi-drag, grid snapping, undo/redo, clipboard) and its PDF rider export, and in the current React + TypeScript version the editor's domain core and most of its tests. The MVP goes to production between November 2026 and January 2027, while the final UI is being designed with graphic artists.",
+      tags: ["React", "TypeScript", "Konva", "Vite", "Vitest"],
       category: "Frontend",
       images: ["/images/projects/riderlab-1.webp", "/images/projects/riderlab-2.webp", "/images/projects/riderlab-3.webp"],
       github: null,
@@ -153,16 +153,17 @@ export const en: PortfolioData = {
     },
     {
       company: "Riderlab · co-founded project",
-      role: "Co-founder · Frontend Lead",
+      role: "Co-founder · Frontend Developer",
       date: "2025 — Present",
       bullets: [
         "Web app that makes stage plots and technical riders fast to build, without the clutter and ads of existing tools; MVP launch planned between November 2026 and January 2027, with the final UI being designed alongside graphic artists",
-        "Real-time graphic editor on KonvaJS to render and manipulate stage, group, channel and monitor nodes on an interactive canvas",
-        "Global selection system with multi-select (Shift+click), synchronized across canvas and tree panel via React Context as single source of truth",
-        "Drag, resize and grid-snapping tools for all node types, with responsive scaling for mobile, tablet and desktop",
-        "Undo/redo history keeping canvas, inspector and tree panel in sync, plus clipboard operations with keyboard shortcuts",
-        "Canvas export to PDF and PNG with an automatically generated technical rider table and editable notes",
-        "Business logic extracted into custom hooks (useItemEventHandlers, useCanvasSelection, useMultiDrag) and utility modules, keeping components lean",
+        "Two-person team: my co-founder leads architecture and the NestJS + PostgreSQL back end; I work on the frontend",
+        "Main author of the first editor (Next.js, React, Konva): selection and multi-drag, resize/rotate, grid snapping, undo/redo history, copy/paste/duplicate with keyboard shortcuts and inline text editing",
+        "Tree-panel multi-select synced with the canvas through React Context, with tool tabs that switch automatically with the selection",
+        "Rider export with jsPDF: PNG/PDF of the stage plus a multi-page technical rider with auto-generated input/output tables",
+        "Canvas performance pass: replaced ~40k Konva shapes with a canvas pattern, moved drag positions from state to refs and memoized contexts",
+        "Current React + TypeScript + Vite version: implemented the editor's typed domain core (content reducer, schema migration, undo/redo, channel numbering), input presets and the input/output table",
+        "Wrote 28 of the project's 39 test files (about 226 Vitest cases)",
       ],
     },
     {

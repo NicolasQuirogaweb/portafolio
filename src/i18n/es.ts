@@ -81,8 +81,8 @@ export const es: PortfolioData = {
     {
       title: "Riderlab",
       description:
-        "Riderlab es una aplicación web para diseñar riders técnicos y stage plots de forma rápida y simple, sin la confusión ni la publicidad de las herramientas actuales, pensada para ingenieros de sonido y equipos de producción en vivo. Proyecto cofundado, donde soy responsable del frontend. Combina un lienzo gráfico con KonvaJS y un panel en árbol para organizar elementos del escenario (entradas, grupos, mezclas, monitores, puntos de energía) con arrastrar y soltar, redimensionado y selección múltiple, más historial de deshacer/rehacer, portapapeles y exportación a PDF con tabla técnica de rider generada automáticamente. El MVP sale a producción entre noviembre de 2026 y enero de 2027, mientras la interfaz final se diseña junto a artistas gráficos.",
-      tags: ["React", "Next.js", "TypeScript", "KonvaJS"],
+        "Riderlab es una aplicación web para diseñar riders técnicos y stage plots de forma rápida y simple, sin la confusión ni la publicidad de las herramientas actuales, pensada para ingenieros de sonido y equipos de producción en vivo. Proyecto cofundado, donde trabajo en el frontend en un equipo de dos. Es un editor 2D con capas de entradas, salidas, energía y estructuras, numeración automática de canales, presets y una tabla de entradas y salidas. Escribí el motor del canvas de la primera versión (selección, arrastre múltiple, snap a grilla, deshacer/rehacer, portapapeles) y su exportación del rider a PDF, y en la versión actual en React + TypeScript el núcleo de dominio del editor y la mayoría de sus tests. El MVP sale a producción entre noviembre de 2026 y enero de 2027, mientras la interfaz final se diseña junto a artistas gráficos.",
+      tags: ["React", "TypeScript", "Konva", "Vite", "Vitest"],
       category: "Frontend",
       images: ["/images/projects/riderlab-1.webp", "/images/projects/riderlab-2.webp", "/images/projects/riderlab-3.webp"],
       github: null,
@@ -164,16 +164,17 @@ export const es: PortfolioData = {
     },
     {
       company: "Riderlab · proyecto cofundado",
-      role: "Cofundador · Responsable de Frontend",
+      role: "Cofundador · Desarrollador Frontend",
       date: "2025 — Presente",
       bullets: [
         "App web para armar stage plots y riders técnicos rápido, sin la confusión ni la publicidad de las herramientas actuales; el MVP sale a producción entre noviembre de 2026 y enero de 2027 y la interfaz final se diseña junto a artistas gráficos",
-        "Editor gráfico en tiempo real con KonvaJS para renderizar y manipular nodos de escenario, grupos, canales y monitores en un lienzo interactivo",
-        "Sistema de selección global con multi-selección (Shift+click), sincronizado entre el lienzo y el panel de árbol mediante React Context como fuente única de verdad",
-        "Herramientas de arrastrar, redimensionar y snap a grilla para todos los tipos de nodo, con escalado responsivo para mobile, tablet y desktop",
-        "Historial de deshacer/rehacer manteniendo sincronizados el lienzo, el inspector y el panel de árbol, más portapapeles con atajos de teclado",
-        "Exportación del lienzo a PDF y PNG con tabla técnica de rider generada automáticamente y notas editables",
-        "Lógica de negocio extraída en hooks personalizados (useItemEventHandlers, useCanvasSelection, useMultiDrag) y módulos utilitarios, manteniendo los componentes livianos",
+        "Equipo de dos: mi socio lidera la arquitectura y el backend en NestJS + PostgreSQL; yo trabajo en el frontend",
+        "Autor principal del primer editor (Next.js, React, Konva): selección y arrastre múltiple, redimensionar/rotar, snap a grilla, historial de deshacer/rehacer, copiar/pegar/duplicar con atajos de teclado y edición de texto en el lugar",
+        "Multi-selección en el panel de árbol sincronizada con el lienzo mediante React Context, con pestañas de herramientas que cambian solas según la selección",
+        "Exportación del rider con jsPDF: PNG/PDF del escenario más un rider técnico de varias páginas con tablas de entradas y salidas generadas automáticamente",
+        "Optimización de rendimiento del canvas: reemplacé unas 40.000 figuras de Konva por un patrón de canvas, pasé las posiciones de arrastre de estado a refs y memoicé los contextos",
+        "Versión actual en React + TypeScript + Vite: implementé el núcleo de dominio tipado del editor (reducer de contenido, migración de esquema, deshacer/rehacer, numeración de canales), los presets de entradas y la tabla de entradas y salidas",
+        "Escribí 28 de los 39 archivos de tests del proyecto (unos 226 casos con Vitest)",
       ],
     },
     {
