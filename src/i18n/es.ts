@@ -135,7 +135,7 @@ export const es: PortfolioData = {
         "Módulos de clientes, obras, presupuestos por rubro, cobros por etapa, gastos de materiales y generales, pagos a personal propio y tercerizado, y galería de fotos por obra",
         "Next.js 16 (App Router), React 19, TypeScript estricto, Supabase (PostgreSQL, Auth, Storage), Tailwind v4 y React Hook Form + Zod, desplegado en Vercel",
         "Seguridad: Row Level Security en todas las tablas, validación con Zod del lado del servidor en cada endpoint, fotos privadas con URLs firmadas y headers CSP/HSTS",
-        "CI con GitHub Actions (type-check, lint, tests y build) y flujo de desarrollo agéntico con Claude Code: CLAUDE.md del proyecto y skills propias que generan una entidad CRUD completa",
+        "CI con GitHub Actions (type-check, lint y build) y flujo de desarrollo agéntico con Claude Code: CLAUDE.md del proyecto y skills propias que generan una entidad CRUD completa",
         "Alcance definido junto al cliente según lo que realmente necesita, con selector de fecha propio en formato argentino y modales de confirmación propios",
       ],
     },

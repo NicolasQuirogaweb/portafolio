@@ -124,7 +124,7 @@ export const en: PortfolioData = {
         "Modules for clients, construction projects, budgets by line item, client payments by stage, material and overhead expenses, staff and subcontractor payments, and per-project photo galleries",
         "Next.js 16 (App Router), React 19, strict TypeScript, Supabase (PostgreSQL, Auth, Storage), Tailwind v4 and React Hook Form + Zod, deployed on Vercel",
         "Security: Row Level Security on every table, server-side Zod validation on every endpoint, private photos with signed URLs and CSP/HSTS headers",
-        "GitHub Actions CI (type-check, lint, tests and build) and an agentic workflow with Claude Code: project CLAUDE.md and custom skills that scaffold a full CRUD entity",
+        "GitHub Actions CI (type-check, lint and build) and an agentic workflow with Claude Code: project CLAUDE.md and custom skills that scaffold a full CRUD entity",
         "Scope shaped with the client around what he actually needs, with a custom date picker in Argentine format and custom confirmation dialogs",
       ],
     },
